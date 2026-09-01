@@ -3,7 +3,8 @@ const http = require('http');
 function requestHandler(req, res) {
   if (req.url === '/') {
     res.statusCode = 200;
-    console.log('Sending Hello World');
+    //console.log('Sending Hello World');
+    res.end('Hi guyz')
   } else {
     res.statusCode = 404;
     res.end('Not Found');
